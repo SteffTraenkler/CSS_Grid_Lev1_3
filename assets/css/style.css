@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    height: 100vh;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 100px auto 50px;
+    grid-template-areas: "header header header header"
+    "sidebar main main main"
+    "footer footer footer footer";
+}
+h1{
+    color: antiquewhite;
+}
+.header{
+    grid-area: header;
+    background-color: blue;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: green;
+}
+.main{
+    grid-area: main;
+    background-color: red;
+}
+.footer{
+    grid-area: footer;
+    background-color: purple;
+}
